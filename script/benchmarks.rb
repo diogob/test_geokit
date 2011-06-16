@@ -11,10 +11,10 @@ end
 
 def test_sequence_of_queries_with_geokit
   Location.benchmark("query geokit") do
-    (1..100).each do |radius|
+    (1..1000).each do |radius|
       Location.within(radius, :origin => [-30.0277041, -51.2287346]).all
     end
-    (1..100).each do |radius|
+    (1..1000).each do |radius|
       Location.within(radius, :origin => [0, 0]).all
     end
   end
@@ -22,10 +22,10 @@ end
 
 def test_sequence_of_queries_with_earthdistance
   Location.benchmark("query earthdistance") do
-    (1..100).each do |radius|
+    (1..1000).each do |radius|
       Location.within_radius(radius, -30.0277041, -51.2287346).all
     end
-    (1..100).each do |radius|
+    (1..1000).each do |radius|
       Location.within_radius(radius, 0, 0).all
     end
   end
