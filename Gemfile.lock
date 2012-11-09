@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/softa/activerecord-postgres-earthdistance.git
-  revision: 039ca62a38c20f353ca6efcdbd62ae43ecf56f57
+  remote: git://github.com/diogob/activerecord-postgres-earthdistance.git
+  revision: a19a7850c53ffa0596e181caf33da94d8fe92526
   specs:
-    activerecord-postgres-earthdistance (0.0.0)
+    activerecord-postgres-earthdistance (0.1.0)
       pg
       pg (>= 0.11)
       rails
